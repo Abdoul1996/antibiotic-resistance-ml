@@ -23,6 +23,8 @@ The full thesis is available at: [`Abdoul_Abdillahi_MS_Thesis_2026.pdf`](./Abdou
 
 ## Dataset
 
+![Class Distribution](figures/class_distribution.png)
+
 - **600** clinical *E. coli* isolates from three published studies:
   - Invasive *E. coli* in England
   - The NORM surveillance programme in Norway
@@ -56,6 +58,8 @@ The full thesis is available at: [`Abdoul_Abdillahi_MS_Thesis_2026.pdf`](./Abdou
 - Trained on same train/test splits as classical models
 - Modified TabR implementation (see `dl_tabular/src/`)
 
+![ML Framework](figures/ml_framework.png)
+
 ---
 
 ## Results
@@ -82,12 +86,56 @@ The full thesis is available at: [`Abdoul_Abdillahi_MS_Thesis_2026.pdf`](./Abdou
 | Decision Tree | 0.876 | 0.858 | 0.928 |
 | TabR (deep learning) | 0.925 | 0.930 | 0.974 |
 
+
+### SNP — Cross-Validation Performance (3-fold CV)
+
+![SNP CV Bars](figures/snp_cv_performance_bars.png)
+
+![SNP CV Heatmap](figures/snp_cv_performance_heatmap.png)
+
+### SNP — ROC & Precision-Recall Curves (Training)
+
+![SNP ROC PRC Training](figures/snp_roc_prc.png)
+
+### SNP — ROC & Precision-Recall Curves (Test Set)
+
+![SNP ROC PRC Test](figures/snp_roc_prc_test.png)
+
+### SNP — Classical ML vs TabR (Test Set)
+
+![SNP Classical vs TabR](figures/snp_classical_vs_tabr.png)
+
+### SNP — Top 20 Features by Mutual Information *(gyrA and parC dominate)*
+
+![SNP Top Features](figures/snp_top_features.png)
+
+### GPA — Cross-Validation Performance (3-fold CV)
+
+![GPA CV Heatmap](figures/gpa_cv_performance_heatmap.png)
+
+### GPA — Test Set Performance
+
+![GPA Test Heatmap](figures/gpa_test_performance_heatmap.png)
+
+### GPA — ROC & Precision-Recall Curves (Training)
+
+![GPA ROC PRC Training](figures/gpa_roc_prc.png)
+
+### GPA — ROC & Precision-Recall Curves (Test Set)
+
+![GPA ROC PRC Test](figures/gpa_roc_prc_test.png)
+
+### GPA — Top 20 Genes by MI and MultiSURF
+
+![GPA Feature Selection](figures/gpa_feature_selection.png)
+
 ### Key Findings
 - GPA features yielded consistently higher performance than SNP features across all models
 - Classical ML outperformed TabR on both datasets under the current experimental conditions
 - Ensemble methods (RF, XGB) dominated on GPA; localized non-linear rules (DT) performed best on SNP
 - XGBoost achieved the highest ROC-AUC on both datasets (SNP: 0.937, GPA: 0.989)
 - TabR remained competitive, ranking above several classical models on the GPA dataset
+- Top SNP features confirm known biology: *gyrA* and *parC* mutations are the primary drivers of ciprofloxacin resistance
 
 ---
 
