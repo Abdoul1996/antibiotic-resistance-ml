@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+
+# Model artifacts
+*.pickle
+*.pkl
+pickledModels/
+pickled_metrics/
+
+# Data & large files
+CVDatasets/
+data/
+raw_data/
+*.npy
+*.npz
+
+# Logs
+dask_logs/
+jobs/
+jobsCompleted/
+*.log
+
+# Archives
+*.tar.gz
+*.zip
+
+# DL / TabR external code
+cache/
+exp/
+
+# OS
+.DS_Store
+
+*csv
