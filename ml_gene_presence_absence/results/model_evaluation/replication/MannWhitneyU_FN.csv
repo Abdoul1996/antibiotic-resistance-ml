@@ -1,0 +1,11 @@
+Algorithm 1,Algorithm 2,Statistic,P-Value,Sig(*)
+Decision Tree,Extreme Gradient Boosting,8.0,0.16415972847851523,
+Decision Tree,K-Nearest Neighbors,9.0,0.07219819770165753,
+Decision Tree,Logistic Regression,9.0,0.05934643879191985,
+Decision Tree,Random Forest,9.0,0.07652250047505922,
+Extreme Gradient Boosting,K-Nearest Neighbors,4.5,1.0,
+Extreme Gradient Boosting,Logistic Regression,9.0,0.06360256962075367,
+Extreme Gradient Boosting,Random Forest,7.0,0.36868826936178156,
+K-Nearest Neighbors,Logistic Regression,9.0,0.05934643879191985,
+K-Nearest Neighbors,Random Forest,7.5,0.26115455974183277,
+Logistic Regression,Random Forest,1.5,0.19670560245894686,

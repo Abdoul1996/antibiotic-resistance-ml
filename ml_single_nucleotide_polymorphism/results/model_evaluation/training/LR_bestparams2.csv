@@ -1,0 +1,2 @@
+solver,C,class_weight,max_iter,random_state,penalty
+liblinear,0.19670471139049137,balanced,97,42,l1

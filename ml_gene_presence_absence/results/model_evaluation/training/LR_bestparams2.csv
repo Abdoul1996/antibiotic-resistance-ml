@@ -1,0 +1,2 @@
+solver,C,class_weight,max_iter,random_state
+saga,393.7906954087723,balanced,36,42

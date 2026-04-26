@@ -1,0 +1,2 @@
+n_neighbors,weights,p,metric
+42,distance,3,euclidean

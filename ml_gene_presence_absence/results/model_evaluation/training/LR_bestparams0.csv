@@ -1,0 +1,2 @@
+solver,C,class_weight,max_iter,random_state
+newton-cg,0.07149036436874309,,998,42

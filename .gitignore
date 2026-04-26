@@ -65,3 +65,15 @@
   dl_tabular/tabr_src/data/
   dl_tabular/tabr_src/exp/                                                                                                                                                                                                                                                   
   dl_tabular/tabr_src/*.tar.gz
+
+# Large SNP exploratory & feature CSVs (too large for GitHub)
+FeatureCorrelations.csv
+Univariate_Significance.csv
+DescribeDataset.csv
+DtypesDataset.csv
+NumUniqueDataset.csv
+DataMissingness.csv
+ProcessedFeatureNames.csv
+processed_*.csv
+initial_*.csv
+*_FI.csv
