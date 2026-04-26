@@ -1,0 +1,12 @@
+{
+    "function": "bin.tabr.main",
+    "gpus": [],
+    "n_parameters": 1016833,
+    "best_epoch": 10,
+    "scores": {
+        "train": 0.9776357827476039,
+        "val": 0.9171974522292994,
+        "test": 0.9322033898305084
+    },
+    "time": "0:00:30"
+}
