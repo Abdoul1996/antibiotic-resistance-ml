@@ -33,3 +33,11 @@ exp/
 .DS_Store
 
 *csv
+# TabR experiment artifacts
+dl_tabular/abdoul/data/
+dl_tabular/abdoul/**/checkpoint.pt
+dl_tabular/abdoul/**/events.out.tfevents*
+dl_tabular/abdoul/**/predictions.npz
+dl_tabular/abdoul/**/loss_train/
+dl_tabular/abdoul/**/score_val/
+dl_tabular/abdoul/**/score_test/
