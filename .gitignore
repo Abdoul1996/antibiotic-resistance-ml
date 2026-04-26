@@ -32,7 +32,11 @@ exp/
 # OS
 .DS_Store
 
-*csv
+# Large raw/processed data CSVs (keep results/metrics CSVs)
+*_Processed.csv
+*_merged_train.csv
+*_merged_test.csv
+
 # TabR experiment artifacts
 dl_tabular/abdoul/data/
 dl_tabular/abdoul/**/checkpoint.pt
