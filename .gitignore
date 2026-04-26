@@ -1,47 +1,67 @@
-# Python
-__pycache__/
-*.pyc
+ # Python                                                                                                                                                                                                                                                                   
+  __pycache__/                                                                                                                                                                                                                                                               
+  *.pyc                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                             
+  # Model artifacts                       
+  *.pickle
+  *.pkl
+  pickledModels/
+  pickled_metrics/                                                                                                                                                                                                                                                           
+   
+  # Data & large files                                                                                                                                                                                                                                                       
+  CVDatasets/                             
+  data/                                                                                                                                                                                                                                                                      
+  raw_data/                               
+  *.npy
+  *.npz
+                                                                                                                                                                                                                                                                             
+  # Logs & runtime
+  dask_logs/                                                                                                                                                                                                                                                                 
+  jobs/                                   
+  jobsCompleted/                                                                                                                                                                                                                                                             
+  runtime/
+  *.log                                                                                                                                                                                                                                                                      
+  *.txt                                   
 
-# Model artifacts
-*.pickle
-*.pkl
-pickledModels/
-pickled_metrics/
-
-# Data & large files
-CVDatasets/
-data/
-raw_data/
-*.npy
-*.npz
-
-# Logs
-dask_logs/
-jobs/
-jobsCompleted/
-*.log
-
-# Archives
-*.tar.gz
-*.zip
-
-# DL / TabR external code
-cache/
-exp/
-
-# OS
-.DS_Store
-
-# Large raw/processed data CSVs (keep results/metrics CSVs)
-*_Processed.csv
-*_merged_train.csv
-*_merged_test.csv
-
-# TabR experiment artifacts
-dl_tabular/abdoul/data/
-dl_tabular/abdoul/**/checkpoint.pt
-dl_tabular/abdoul/**/events.out.tfevents*
-dl_tabular/abdoul/**/predictions.npz
-dl_tabular/abdoul/**/loss_train/
-dl_tabular/abdoul/**/score_val/
-dl_tabular/abdoul/**/score_test/
+  # Archives
+  *.tar.gz
+  *.zip
+                                                                                                                                                                                                                                                                             
+  # Redundant/noisy plot folders
+  metricBoxplots_uniform/                                                                                                                                                                                                                                                    
+  metricBoxplots_uniform2/                                                                                                                                                                                                                                                   
+  univariate_analyses/
+                                                                                                                                                                                                                                                                             
+  # DL / TabR external code               
+  cache/                                                                                                                                                                                                                                                                     
+  exp/                                    
+                                                                                                                                                                                                                                                                             
+  # OS
+  .DS_Store                                                                                                                     
+                                                                                                                                                                                                                                                                             
+  # DL / TabR external code               
+  cache/                                                                                                                                                                                                                                                                     
+  exp/                                    
+                                                                                                                                                                                                                                                                             
+  # OS
+  .DS_Store                                                                                                                                                                                                                                                                  
+                                          
+  # Large raw/processed data CSVs (keep results/metrics CSVs)                                                                                                                                                                                                                
+  *_Processed.csv
+  *_merged_train.csv                                                                                                                                                                                                                                                         
+  *_merged_test.csv                       
+                                                                                                                                                                                                                                                                             
+  # TabR experiment artifacts             
+  dl_tabular/abdoul/data/
+  dl_tabular/abdoul/**/checkpoint.pt                                                                                                                                                                                                                                         
+  dl_tabular/abdoul/**/events.out.tfevents*                                                                                                                                                                                                                                  
+  dl_tabular/abdoul/**/predictions.npz                                                                                                                                                                                                                                       
+  dl_tabular/abdoul/**/loss_train/                                                                                                                                                                                                                                           
+  dl_tabular/abdoul/**/score_val/         
+  dl_tabular/abdoul/**/score_test/                                                                                                                                                                                                                                           
+                                          
+  # TabR source - exclude heavy artifacts                                                                                                                                                                                                                                    
+  dl_tabular/tabr_src/cache/              
+  dl_tabular/tabr_src/data/
+  dl_tabular/tabr_src/exp/                                                                                                                                                                                                                                                   
+  dl_tabular/tabr_src/*.tar.gz
